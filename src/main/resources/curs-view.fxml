@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #f8dbff; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.ControllerContinutCurs">
+    <content>
+        <VBox fx:id="containerElemente" alignment="CENTER" spacing="10.0" style="-fx-background-radius: 10; -fx-background-color: #f8dbff;" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+            <children>
+            <VBox alignment="CENTER" layoutX="20.0" layoutY="57.0" spacing="10.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </VBox>
+            </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+        </VBox>
+    </content>
+</ScrollPane>

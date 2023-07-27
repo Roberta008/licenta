@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="containerElement" alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" prefWidth="750.0"
+         style="-fx-background-color: white; -fx-background-radius: 25;" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.example.lucrarelicenta2.controllere.profesor.ControllerProiecteProfesor">
+    <Label fx:id="labelTitluProiect" alignment="CENTER" maxHeight="1.7976931348623157E308"
+           maxWidth="1.7976931348623157E308" style="-fx-text-fill: #cc33ff;" text="Proiect -" textAlignment="CENTER"
+           wrapText="true" VBox.vgrow="NEVER">
+        <font>
+            <Font name="System Bold Italic" size="36.0"/>
+        </font>
+        <VBox.margin>
+            <Insets top="15.0"/>
+        </VBox.margin>
+    </Label>
+    <Label alignment="CENTER" layoutX="10.0" layoutY="25.0" maxHeight="1.7976931348623157E308"
+           maxWidth="1.7976931348623157E308" text="Cerinta proiectului este:" textAlignment="CENTER" wrapText="true">
+        <font>
+            <Font name="System Italic" size="24.0"/>
+        </font>
+    </Label>
+    <VBox fx:id="containerObiectiveProiect" alignment="CENTER" prefHeight="200.0" prefWidth="100.0"
+          style="-fx-background-color: #f7e6ff; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-padding: 10;">
+        <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+    </VBox>
+    <Label alignment="CENTER" layoutX="10.0" layoutY="78.0" maxHeight="1.7976931348623157E308"
+           maxWidth="1.7976931348623157E308" text="Proiectele incarcate de catre studenti:" textAlignment="CENTER"
+           wrapText="true">
+        <font>
+            <Font name="System Italic" size="24.0"/>
+        </font>
+        <VBox.margin>
+            <Insets top="10.0"/>
+        </VBox.margin>
+    </Label>
+    <FlowPane fx:id="containerFisiereProiecte" alignment="CENTER" hgap="15.0" layoutX="20.0" layoutY="123.0"
+              prefHeight="200.0" prefWidth="100.0"
+              style="-fx-background-color: #f7e6ff; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-padding: 10;"
+              vgap="10.0">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+    </FlowPane>
+    <DatePicker fx:id="selectorNoulTermen" prefWidth="400.0" promptText="Noul termen limita"
+                style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-background-color: white;">
+        <VBox.margin>
+            <Insets bottom="10.0" top="10.0"/>
+        </VBox.margin>
+    </DatePicker>
+</fx:root>

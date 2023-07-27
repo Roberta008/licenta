@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--suppress JavaFxDefaultTag -->
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="700.0"
+         spacing="15.0"
+         style="-fx-background-color: #f7e6ff; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-padding: 20;"
+         type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.example.lucrarelicenta2.controllere.profesor.ControllerCreareTemeProfesor">
+    <children>
+        <HBox alignment="CENTER" spacing="5.0">
+            <children>
+                <Label style="-fx-font-size: 16; -fx-font-style: italic;" text="Titlul elementului"/>
+                <TextField fx:id="fieldTitlu" prefWidth="350.0"
+                           style="-fx-border-color: #cc33ff; -fx-border-radius: 25; -fx-border-width: 2; -fx-background-color: white; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1);"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="15.0">
+            <children>
+                <Label style="-fx-font-size: 16; -fx-font-style: italic;" text="Cerinta Element"/>
+                <TextField fx:id="fieldCerinta" prefWidth="350.0"
+                           style="-fx-border-color: #cc33ff; -fx-border-radius: 25; -fx-border-width: 2; -fx-background-color: white; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1);"/>
+            </children>
+        </HBox>
+        <DatePicker fx:id="selectorTermenLimita" layoutX="273.0" layoutY="118.0" prefWidth="400.0"
+                    promptText="Termen limita" style="-fx-background-color: white;"/>
+        <Button fx:id="butonCreareElement" mnemonicParsing="false"
+                style="-fx-border-color: #cc33ff; -fx-border-width: 2; -fx-border-radius: 25; -fx-background-color: white; -fx-background-radius: 25; -fx-font-size: 18; -fx-padding: 5 50; -fx-font-style: italic; -fx-text-fill: #cc33ff; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-cursor: hand;"
+                text="Creaza Element!"/>
+    </children>
+</fx:root>

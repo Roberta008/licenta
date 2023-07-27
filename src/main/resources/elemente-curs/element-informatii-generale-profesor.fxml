@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--suppress JavaFxDefaultTag -->
+
+<fx:root maxWidth="-Infinity" prefWidth="750.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1);" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.profesor.ControllerInformatiiGeneraleProfesor">
+    <children>
+        <Label fx:id="labelTitlu" alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #cc33ff; -fx-cursor: hand;" text="Informatie Generala" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+        </Label>
+        <Label fx:id="labelMesaj" alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #b3b3b3; -fx-cursor: hand;" text="Informatie" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Italic" size="18.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+        </Label>
+        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #330033;" text="Mesaje Utilizatori">
+            <font>
+                <Font name="System Italic" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="15.0" top="15.0" />
+            </VBox.margin>
+        </Label>
+        <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="958.0" style="-fx-background-color: white;">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" />
+            </VBox.margin>
+            <VBox fx:id="containerMesaje" alignment="CENTER" spacing="15.0" style="-fx-background-color: white;" />
+            <padding>
+                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+            </padding>
+        </ScrollPane>
+        <VBox alignment="CENTER" spacing="10.0">
+            <children>
+                <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label text="Introdu mesajul" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="System Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="fieldMesaj" prefHeight="30.0" prefWidth="600.0" style="-fx-border-color: #cc33ff; -fx-border-radius: 25; -fx-background-color: transparent;" />
+                    </children>
+                </HBox>
+                <Button fx:id="butonTrimiteMesaj" mnemonicParsing="false" style="-fx-background-color: #f7e6ff; -fx-text-fill: #cc33ff; -fx-background-radius: 25; -fx-padding: 5 50; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1); -fx-border-color: #cc33ff; -fx-border-radius: 25;" text="Trimite Mesaj">
+                    <font>
+                        <Font name="System Italic" size="24.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" top="15.0" />
+            </VBox.margin>
+        </VBox>
+    </children>
+</fx:root>

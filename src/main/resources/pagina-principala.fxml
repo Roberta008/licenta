@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--suppress JavaFxDefaultTag -->
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cc33ff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.ControllerFereastraPrincipala">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+            <children>
+                <VBox alignment="TOP_CENTER" maxWidth="200.0" prefHeight="200.0" spacing="10.0" style="-fx-background-radius: 10 0 0 10;">
+                    <children>
+                        <Label style="-fx-text-fill: #cc33ff;" text="Digital Class" textAlignment="CENTER" wrapText="true">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelAutentificare" alignment="TOP_CENTER" prefWidth="170.0" styleClass="labelOptiuni" text="Autentificare">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelOptiuneCursuri" alignment="TOP_CENTER" layoutX="28.0" layoutY="30.0" prefWidth="170.0" styleClass="labelOptiuni" text="Cursurile Mele">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox fx:id="containerDinamic" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 0 10 10 0;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox fx:id="baraDeCautare" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" style="-fx-background-radius: 0 10 0 0;">
+                            <children>
+                                <Label style="-fx-text-fill: #cc33ff;" text="Cautare curs:">
+                                    <font>
+                                        <Font name="System Bold Italic" size="24.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="fieldCautareCursuri" focusTraversable="false" prefWidth="300.0" promptText="Titlu curs" styleClass="casutaCautare">
+                                    <font>
+                                        <Font name="System Italic" size="18.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <FlowPane fx:id="containerCursuri" hgap="5.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 0 0 10 0; -fx-background-color: #f8dbff; -fx-background-radius: 25 0 0 25;" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </FlowPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</HBox>

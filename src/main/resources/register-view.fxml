@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" style="-fx-background-color: #cc33ff; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.ControllerInregistrare">
+    <GridPane alignment="CENTER" maxHeight="600.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="490.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="155.0" minHeight="0.0" prefHeight="64.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="400.0" prefWidth="200.0" style="-fx-background-radius: 20;">
+            <Label prefWidth="132.0" style="-fx-text-fill: #cc33ff;" text="Inregistrare">
+                <font>
+                    <Font name="System Bold Italic" size="24.0" />
+                </font>
+            </Label>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+            <Label fx:id="labelEroare" style="-fx-text-fill: #cc33ff;" text="Fieldurile trebuie completate!" textFill="#811383">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin></Label>
+            <TextField fx:id="fieldEmail" maxWidth="200.0" promptText="Email" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextField>
+         <Label fx:id="labelEroareEmail" style="-fx-text-fill: #cc33ff;" text="E-maill introdus gresit !" textFill="#811383">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+         <TextField fx:id="fieldNume" layoutX="110.0" layoutY="31.0" maxWidth="200.0" promptText="Nume" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="fieldPrenume" layoutX="110.0" layoutY="52.0" maxWidth="200.0" promptText="Prenume" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+         </TextField>
+            <TextField fx:id="fieldNumeUtilizator" maxWidth="200.0" promptText="Nume utilizator" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+            </TextField>
+         <Label fx:id="labelEroareNumeUtilizator" style="-fx-text-fill: #cc33ff;" text="Numele utilizatorului trebuie sa contina minim 4 caractere!" textFill="#811383">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+            <PasswordField fx:id="fieldParolaInreg" layoutX="110.0" layoutY="133.0" maxWidth="200.0" promptText="Parola" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </PasswordField>
+         <Label fx:id="labelEroareParola" style="-fx-text-fill: #cc33ff;" text="Parola trebuie sa contina 1 majuscula, 1 cifra, 1 caracter special !" textAlignment="CENTER" textFill="#811383" wrapText="true">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+            <PasswordField fx:id="fieldConfParola" layoutX="110.0" layoutY="30.0" maxWidth="200.0" promptText="Confirmare Parola" style="-fx-border-width: 0 0 2 0; -fx-border-color: #e0e0e0; -fx-background-color: transparent;">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </PasswordField>
+         <Label fx:id="labelEroareParolaConf" style="-fx-text-fill: #cc33ff;" text="Parola de confirmare nu coincide cu parola introdusa initial mai sus !" textFill="#811383">
+            <font>
+               <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+            <Button fx:id="butonInregistrare" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #cc33ff; -fx-text-fill: white; -fx-padding: 10; -fx-background-radius: 10;" text="Inregistrare">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+            </Button>
+        </VBox>
+        <VBox prefHeight="68.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 20;" GridPane.rowIndex="2">
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="500.0" spacing="2.0" style="-fx-background-radius: 20;">
+                <Label text="Ai deja un cont creat?">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelAutentificare" style="-fx-text-fill: #cc33ff;" text="Autentificare">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </HBox>
+        </VBox>
+    </GridPane>
+</HBox>

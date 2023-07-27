@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--suppress JavaFxDefaultTag -->
+
+<fx:root fx:id="containerElement" alignment="CENTER" maxWidth="-Infinity" prefWidth="750.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 1);" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.profesor.ControllerTestProfesor">
+    <children>
+        <Label fx:id="labelTitluElement" alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #cc33ff;">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+         <VBox.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </VBox.margin>
+        </Label>
+    </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</fx:root>

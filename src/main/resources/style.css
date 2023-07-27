@@ -1,0 +1,62 @@
+.casutaCautare {
+    -fx-background-color: #f2f2f2;
+    -fx-background-radius: 5;
+    -fx-border-color:  #cc33ff;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.labelOptiuni {
+    -fx-background-color:  #cc33ff;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 8 20 8 20;
+}
+
+.labelOptiuni:hover {
+    -fx-cursor: hand;
+    -fx-background-color:  #cc33ff;
+}
+
+.containerCurs {
+    -fx-padding: 15;
+    -fx-cursor: hand;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+}
+
+.containerCursInformatiiCurs {
+    -fx-background-radius: 5 5 0 0;
+    -fx-alignment: center;
+    -fx-border-color: #f8dbff;
+    -fx-background-color: white;
+    -fx-border-width: 0 0 2 0;
+}
+
+.containerCursInformatiiTeme {
+    -fx-alignment: center;
+    -fx-border-color: #f8dbff;
+    -fx-background-color: white;
+    -fx-border-width: 0 0 2 0;
+}
+
+.containerCursOptiuni {
+    -fx-background-radius: 0 0 5 5;
+}
+
+.lableAutentificatInactiv {
+    -fx-text-fill: white;
+    -fx-padding: 5 5 10 5;
+    -fx-pref-width: 90;
+    -fx-alignment: center;
+}
+
+.lableAutentificatActiv {
+    -fx-text-fill: #7f2895;
+    -fx-background-color: white;
+    -fx-padding: 5 5 10 5;
+    -fx-pref-width: 90;
+    -fx-alignment: center;
+    -fx-background-radius: 5 5 0 0;
+}

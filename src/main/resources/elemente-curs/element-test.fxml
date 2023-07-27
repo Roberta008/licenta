@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="containerElement" alignment="CENTER" maxWidth="-Infinity" prefWidth="1000.0" style="-fx-background-color: white; -fx-border-color: #bfbfbf; -fx-background-radius: 25; -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lucrarelicenta2.controllere.ControllerElementTest">
+    <children>
+        <Label fx:id="labelTitluElement" alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #cc33ff;" text="Test 09 Iunie 2023">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="butonTrimiteTest" mnemonicParsing="false" style="-fx-background-color: #cc33ff; -fx-background-radius: 25; -fx-padding: 10 50; -fx-text-fill: white;" text="Trimite Test">
+            <VBox.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </VBox.margin>
+            <font>
+                <Font name="System Italic" size="24.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>
